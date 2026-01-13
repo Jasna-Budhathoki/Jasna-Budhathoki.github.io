@@ -1,0 +1,214 @@
+/* Custom styles for the site */
+.social-links-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+/* Work experience section */
+.work-experience .job-title {
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #3c3939;
+}
+
+.work-experience .company-name {
+	font-size: 0.85em;
+	font-weight: normal;
+	color: #7b7676;
+}
+
+.work-experience .job-description {
+	font-size: 0.9em;
+	list-style-type: disc;
+	padding-left: 20px;
+	color: #7b7676;
+	margin-bottom: 10px;
+}
+
+.job-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.job-info {
+	flex-grow: 1;
+}
+
+.logo-container {
+	flex-shrink: 0;
+}
+
+.company-logo {
+	max-width: 130px;
+	height: auto;
+	max-height: 100px;
+}
+
+.college-logo {
+	max-width: 70px;
+	height: auto;
+}
+
+.origin-logo {
+	max-width: 180px;
+	height: auto;
+}
+
+.center-text {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.project-description {
+	font-size: 20px;
+	line-height: 2;
+}
+
+.image.fit video {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.section-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 1.5rem;
+}
+
+.card {
+	background: rgba(255, 255, 255, 0.9);
+	border: 1px solid #e5e5e5;
+	border-radius: 12px;
+	padding: 1.25rem 1.5rem;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.skill-title {
+	white-space: normal;
+	word-break: normal;
+	overflow-wrap: break-word;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	text-transform: none;
+}
+
+.meta {
+	font-size: 0.8em;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	color: #8a8a8a;
+}
+
+.edu-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1.25rem;
+}
+
+.edu-details h3 {
+	margin: 0.35rem 0 0.3rem;
+	font-size: 1.2em;
+}
+
+.edu-details p {
+	margin: 0;
+	color: #6d6d6d;
+}
+
+.skill-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin-top: 0.75rem;
+}
+
+.skill-pill {
+	display: inline-block;
+	padding: 0.4rem 0.75rem;
+	border: 1px solid #dedede;
+	border-radius: 999px;
+	background-color: #f5f5f5;
+	font-size: 0.85em;
+	color: #3f3f3f;
+}
+
+.experience-list {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.experience-item {
+	display: grid;
+	grid-template-columns: 140px 1fr;
+	gap: 1.25rem;
+	align-items: start;
+}
+
+.exp-date {
+	font-size: 0.8em;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	color: #8a8a8a;
+	border-left: 3px solid #d2d2d2;
+	padding-left: 0.75rem;
+	margin-top: 0.35rem;
+}
+
+.exp-card {
+	background: #fff;
+	border: 1px solid #e5e5e5;
+	border-radius: 12px;
+	padding: 1.25rem 1.5rem;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.exp-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1.25rem;
+}
+
+.exp-role {
+	margin: 0;
+	font-size: 1.15em;
+	color: #3c3939;
+}
+
+.exp-company {
+	display: block;
+	font-size: 0.9em;
+	color: #7b7676;
+	margin-top: 0.2rem;
+}
+
+.exp-card ul {
+	margin: 0.9rem 0 0 1rem;
+}
+
+@media screen and (max-width: 736px) {
+	.experience-item {
+		grid-template-columns: 1fr;
+	}
+
+	.exp-date {
+		border-left: none;
+		padding-left: 0;
+	}
+
+	.exp-header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.edu-header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
