@@ -64,6 +64,14 @@
 	margin-bottom: 2rem;
 }
 
+.intro-name {
+	font-size: clamp(1.8rem, 4.8vw, 40px);
+	line-height: 1.1;
+	letter-spacing: 0.08em;
+	white-space: normal;
+	word-break: keep-all;
+}
+
 .intro-resume {
 	font-size: 1.1rem;
 	padding: 0 2.4rem;
